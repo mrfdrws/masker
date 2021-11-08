@@ -1,6 +1,3 @@
-import * as tf from '@tensorflow/tfjs';
-import * as tfd from '@tensorflow/tfjs-data';
-import * as blazeface from '@tensorflow-models/blazeface';
 
 let video, videoWidth, videoHeight;
 async function setupCamera() {
