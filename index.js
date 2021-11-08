@@ -37,7 +37,7 @@ async function loadFaceDetectionModel() {
 let maskDetectionModel;
 async function loadMaskDetectionModel() {
   console.log("loading mask detection model");
-  await tf.loadLayersModel('./model.json').then(m => {
+  await tf.loadLayersModel('./models/tfjs/model.json').then(m => {
     maskDetectionModel = m;
     console.log("mask detection model loaded");
   });
