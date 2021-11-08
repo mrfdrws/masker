@@ -92,7 +92,7 @@ async function renderPrediction() {
       let faceBoxStyle = "rgba(255, 0, 0, 0.25)";
       let label = "without mask";
       if (predictions.length > 0) {
-        if (predictions[0] > decisionThreshold) {
+        if (predictions[1] > decisionThreshold) {
           faceBoxStyle = "rgba(0, 255, 0, 0.25)";
           label = `with mask: ${Math.floor(predictions[0] * 1000) / 10}%`;
         } else {
